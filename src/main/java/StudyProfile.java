@@ -2,7 +2,10 @@ public enum StudyProfile {
     MEDICINE("Медицина"),
     TECHNOLOGY("Технология"),
     IT("ИТ"),
-    LAW("Юриспруденция");
+    LAW("Юриспруденция"),
+    LINGUISTICS("Лингвистика"),
+    PHYSICS("Физика"),
+    MATHEMATICS("Математика");
 
     public final String profileName;
 

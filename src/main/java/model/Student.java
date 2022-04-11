@@ -1,3 +1,5 @@
+package model;
+
 public class Student {
     private String fullName;
     private  String universityId;
@@ -51,7 +53,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student: [Full name: " + fullName +
+        return "model.Student: [Full name: " + fullName +
                 ", university id: " + universityId +
                 ", current course number: " + currentCourseNumber +
                 ", average exam score: " + avgExamScore + "]";

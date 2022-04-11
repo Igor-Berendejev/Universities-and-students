@@ -1,3 +1,5 @@
+package model;
+
 public class University {
     private String id;
     private String fullName;
@@ -62,7 +64,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University: [ID: " + id +
+        return "model.University: [ID: " + id +
                 ", full name: " + fullName +
                 ", short name: " + shortName +
                 ", year of foundation: " + yearOfFoundation +

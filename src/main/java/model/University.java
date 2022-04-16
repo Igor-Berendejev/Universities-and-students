@@ -1,13 +1,23 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.Objects;
+
 public class University {
+    @SerializedName(value = "University ID")
     private String id;
+    @SerializedName(value = "University name")
     private String fullName;
+    @SerializedName(value = "Short name")
     private String shortName;
+    @SerializedName("Foundation year")
     private int yearOfFoundation;
+    @SerializedName(value = "University profile")
     private StudyProfile mainProfile;
 
-    public University(){};
+    public University() {
+    }
 
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
         this.id = id;
@@ -69,5 +79,22 @@ public class University {
                 ", short name: " + shortName +
                 ", year of foundation: " + yearOfFoundation +
                 ", main profile: " + mainProfile.getProfileName() + "]";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || obj.getClass() != getClass()) return false;
+        University university = (University) obj;
+        return this.getId().equals(university.getId()) &&
+                this.getFullName().equals(university.getFullName()) &&
+                this.getShortName().equals(university.getShortName()) &&
+                this.getMainProfile() == university.getMainProfile() &&
+                this.getYearOfFoundation() == university.getYearOfFoundation();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, fullName, shortName, mainProfile, yearOfFoundation);
     }
 }

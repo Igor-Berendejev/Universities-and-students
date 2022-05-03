@@ -12,11 +12,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class UniversityInfoReader {
     private static UniversityInfoReader INSTANCE;
-    private HashSet<Student> students = new HashSet<Student>();
-    private HashSet<University> universities = new HashSet<University>();
+    private Set<Student> students = new HashSet<Student>();
+    private Set<University> universities = new HashSet<University>();
 
     private UniversityInfoReader() {
     }
@@ -28,11 +29,11 @@ public class UniversityInfoReader {
         return INSTANCE;
     }
 
-    public HashSet<Student> getStudents() {
+    public Set<Student> getStudents() {
         return students;
     }
 
-    public HashSet<University> getUniversities() {
+    public Set<University> getUniversities() {
         return universities;
     }
 

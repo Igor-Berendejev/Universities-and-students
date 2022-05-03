@@ -7,6 +7,7 @@ import model.Student;
 import model.University;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class JsonUtil {
     private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -30,7 +31,7 @@ public class JsonUtil {
         return gson.fromJson(studentJson, Student.class);
     }
 
-    public static String getUniversityCollectionJson(HashSet<University> universityCollection) {
+    public static String getUniversityCollectionJson(Set<University> universityCollection) {
         return gson.toJson(universityCollection);
     }
 
@@ -39,7 +40,7 @@ public class JsonUtil {
         }.getType());
     }
 
-    public static String getStudentCollectionJson(HashSet<Student> studentCollection) {
+    public static String getStudentCollectionJson(Set<Student> studentCollection) {
         return gson.toJson(studentCollection);
     }
 

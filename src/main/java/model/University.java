@@ -74,7 +74,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "model.University: [ID: " + id +
+        return "University: [ID: " + id +
                 ", full name: " + fullName +
                 ", short name: " + shortName +
                 ", year of foundation: " + yearOfFoundation +

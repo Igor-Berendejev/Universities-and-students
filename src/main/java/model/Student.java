@@ -62,7 +62,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "model.Student: [Full name: " + fullName +
+        return "Student: [Full name: " + fullName +
                 ", university id: " + universityId +
                 ", current course number: " + currentCourseNumber +
                 ", average exam score: " + avgExamScore + "]";

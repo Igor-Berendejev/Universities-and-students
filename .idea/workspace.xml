@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b3598578-5e36-4b29-8294-838426af02c2" name="Changes" comment="adding Statistics and StatisticsUtil to collect statistics per each study profile">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UniversityInfoReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UniversityInfoReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/XlsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/XlsWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StatisticsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StatisticsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/universityInfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/universityInfo.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/University.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/University.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/UniversityInfoReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UniversityInfoReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/XlsWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/XlsWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/StatisticsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/StatisticsUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/universityInfo.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26wBiWxh6Lymn1ZO9XckC2qqSvE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Universities" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3598578-5e36-4b29-8294-838426af02c2" name="Changes" comment="" />
+      <created>1648324900903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648324900903</updated>
+      <workItem from="1648324908272" duration="3990000" />
+      <workItem from="1648491644456" duration="140000" />
+      <workItem from="1649182774487" duration="5311000" />
+      <workItem from="1649615356255" duration="5127000" />
+      <workItem from="1649705936985" duration="690000" />
+      <workItem from="1650021099931" duration="4389000" />
+      <workItem from="1650108399614" duration="3358000" />
+      <workItem from="1650180651622" duration="16000" />
+      <workItem from="1650576631546" duration="1966000" />
+      <workItem from="1651255758646" duration="7871000" />
+      <workItem from="1651265834259" duration="19000" />
+      <workItem from="1651515441934" duration="10015000" />
+      <workItem from="1651603809917" duration="2702000" />
+      <workItem from="1651866087659" duration="6261000" />
+      <workItem from="1651945735424" duration="611000" />
+      <workItem from="1651946419561" duration="5139000" />
+      <workItem from="1652210076629" duration="117000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1648329344350</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648329344350</updated>
+    </task>
+    <task id="LOCAL−00002" summary="UniversityInfoReader class allows to read Students and Universities data from a file and store them to collections">
+      <created>1649188088979</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1649188088979</updated>
+    </task>
+    <task id="LOCAL−00003" summary="UniversityInfoReader class allows to read Students and Universities data from a file and store them to collections">
+      <created>1649188102128</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1649188102128</updated>
+    </task>
+    <task id="LOCAL−00004" summary="adding Student and University Comparators">
+      <created>1649706462056</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1649706462056</updated>
+    </task>
+    <task id="LOCAL−00005" summary="adding Student and University Comparators">
+      <created>1649706601172</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1649706601172</updated>
+    </task>
+    <task id="LOCAL−00006" summary="implementing Student, University and their collections serialization / deserialization with JsonUtil class.&#10;Overriding equals and hashCode methods for University and Student classes">
+      <created>1650111706047</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1650111706047</updated>
+    </task>
+    <task id="LOCAL−00007" summary="implementing Student, University and their collections serialization / deserialization with JsonUtil class.&#10;Overriding equals and hashCode methods for University and Student classes">
+      <created>1650111717821</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1650111717821</updated>
+    </task>
+    <task id="LOCAL−00008" summary="implementing Student, University and their collections serialization / deserialization with JsonUtil class.&#10;Overriding equals and hashCode methods for University and Student classes">
+      <created>1650111728784</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1650111728784</updated>
+    </task>
+    <task id="LOCAL−00009" summary="adding Statistics and StatisticsUtil to collect statistics per each study profile">
+      <created>1651605316563</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1651605316563</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="UniversityInfoReader class allows to read Students and Universities data from a file and store them to collections" />
+    <MESSAGE value="adding Student and University Comparators" />
+    <MESSAGE value="implementing Student, University and their collections serialization / deserialization with JsonUtil class.&#10;Overriding equals and hashCode methods for University and Student classes" />
+    <MESSAGE value="adding Statistics and StatisticsUtil to collect statistics per each study profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Statistics and StatisticsUtil to collect statistics per each study profile" />
+  </component>
+</project>

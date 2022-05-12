@@ -11,12 +11,23 @@ import service.studentComparators.StudentComparators;
 import service.universityComparators.UniversityComparator;
 import service.universityComparators.UniversityComparators;
 
-import java.util.HashSet;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.LogManager;
 
 public class Main {
     public static void main(String[] args) {
+        try {
+            InputStream stream = new FileInputStream("src/main/resources/logging.properties");
+            LogManager.getLogManager().readConfiguration(stream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
         UniversityInfoReader uIReader = UniversityInfoReader.getInstance();
         String filePath = "src/main/resources/universityInfo.xlsx";
         uIReader.getStudentData(filePath);
@@ -25,19 +36,6 @@ public class Main {
         UniversityComparator univProfileComp = Comparators.getUniversityComparator(UniversityComparators.UNIVERSITY_PROFILE_COMPARATOR);
         Set<University> univSet = uIReader.getUniversities();
         Set<Student> studSet = uIReader.getStudents();
-
-        // Serializing Students and Universities collections
-        String univJsonString = JsonUtil.getUniversityCollectionJson(univSet);
-        String studJsonString = JsonUtil.getStudentCollectionJson(studSet);
-        System.out.println(univJsonString);
-        System.out.println("\n-----------------------------\n");
-        System.out.println(studJsonString);
-
-        // Deserializing Students and Universities collections
-        HashSet<University> newUnivSet = JsonUtil.universityCollectionFromJson(univJsonString);
-        HashSet<Student> newStudSet = JsonUtil.studentCollectionFromJson(studJsonString);
-        System.out.println("Initial university set size: " + univSet.size() + ", new set size " + newUnivSet.size());
-        System.out.println("Initial student set size: " + studSet.size() + ", new set size " + newStudSet.size());
 
         univSet.stream()
                 .sorted(univProfileComp)

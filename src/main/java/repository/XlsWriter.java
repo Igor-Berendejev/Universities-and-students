@@ -11,10 +11,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.logging.*;
 
 public class XlsWriter {
 
     private static XlsWriter INSTANCE;
+    public static final Logger writerLogger = Logger.getLogger(XlsWriter.class.getName());
 
     private XlsWriter(){}
 
@@ -24,8 +26,10 @@ public class XlsWriter {
     }
 
     public void writeXls(List<Statistics> statisticsList, String filePath){
+        writerLogger.info("Writing statistics to Excel");
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet statSheet = workbook.createSheet("Statistics");
+        writerLogger.fine("Created workbook \"Statistics\"");
         int rowCount = 0;
 
         //Create a header
@@ -40,6 +44,7 @@ public class XlsWriter {
         header.createCell(cellCount++).setCellValue("Number of universities");
         header.createCell(cellCount++).setCellValue("Universities");
         header.forEach(c-> c.setCellStyle(headerStyle));
+        writerLogger.fine("\"Statistics\" workbook header has been set");
 
         // fill the sheet with statistics
         for (Statistics s : statisticsList){
@@ -53,13 +58,16 @@ public class XlsWriter {
             row.createCell(cellCount++).setCellValue(s.getUniversityList()
                     .stream()
                     .collect(Collectors.joining(", ")));
-
+            writerLogger.info("Created statistics for " + s.getStudyProfile() + " at row " + row.getRowNum());
             // write sheet to a file
-            try (FileOutputStream fos = new FileOutputStream(filePath)){
-                workbook.write(fos);
-            }catch (IOException e){
-                e.printStackTrace();
-            }
+
+
+        }
+        try (FileOutputStream fos = new FileOutputStream(filePath)){
+            workbook.write(fos);
+            writerLogger.fine("Statistics file has been saved at " + filePath);
+        }catch (IOException e){
+            writerLogger.severe("Failed to write Statistics file at " + filePath + ". " + e.getMessage());
         }
     }
 

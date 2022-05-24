@@ -4,24 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3598578-5e36-4b29-8294-838426af02c2" name="Changes" comment="adding Statistics and StatisticsUtil to collect statistics per each study profile">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
+    <list default="true" id="b3598578-5e36-4b29-8294-838426af02c2" name="Changes" comment="adding logging">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_0_RC3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_0_0_M3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_3_0_0_RC3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_3_0_0_M4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_3_0_0_M4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_3_0_0_M4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/DataStructureWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/JsonWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/XmlReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/XmlWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/DateAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Universities.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Universities.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_guicedee_services_jakarta_xml_bind_api_1_2_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_guicedee_services_jakarta_xml_bind_api_1_2_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UniversityInfoReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UniversityInfoReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/XlsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/XlsWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/University.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/StatisticsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StatisticsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/universityInfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/universityInfo.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statistics.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/statistics.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Universities-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Universities-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Statistics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Student.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/University.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/University.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/UniversityInfoReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UniversityInfoReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/XlsWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/XlsWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/JsonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/StatisticsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/StatisticsUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/universityInfo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +73,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="26wBiWxh6Lymn1ZO9XckC2qqSvE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,6 +96,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -113,6 +143,14 @@
       <workItem from="1651945735424" duration="611000" />
       <workItem from="1651946419561" duration="5139000" />
       <workItem from="1652210076629" duration="117000" />
+      <workItem from="1652384613150" duration="667000" />
+      <workItem from="1652466212188" duration="7690000" />
+      <workItem from="1652475028380" duration="2118000" />
+      <workItem from="1652615735659" duration="2785000" />
+      <workItem from="1652627293626" duration="10577000" />
+      <workItem from="1652811074366" duration="16000" />
+      <workItem from="1653339757519" duration="162000" />
+      <workItem from="1653371146895" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1648329344350</created>
@@ -169,7 +207,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1651605316563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="adding logging">
+      <created>1652384735985</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1652384735985</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +236,11 @@
     <MESSAGE value="adding Student and University Comparators" />
     <MESSAGE value="implementing Student, University and their collections serialization / deserialization with JsonUtil class.&#10;Overriding equals and hashCode methods for University and Student classes" />
     <MESSAGE value="adding Statistics and StatisticsUtil to collect statistics per each study profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Statistics and StatisticsUtil to collect statistics per each study profile" />
+    <MESSAGE value="adding logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding logging" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

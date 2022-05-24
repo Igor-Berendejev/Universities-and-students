@@ -3,14 +3,13 @@ package service;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import model.Statistics;
 import model.Student;
 import model.University;
-import repository.UniversityInfoReader;
 
-import java.io.IOException;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
-import java.util.logging.LogManager;
 
 /**
  * A utility class for mapping Student, University and their collections to a json
@@ -95,5 +94,14 @@ public class JsonUtil {
     public static HashSet<Student> studentCollectionFromJson(String studentCollectionJson) {
         return gson.fromJson(studentCollectionJson, new TypeToken<HashSet<Student>>() {
         }.getType());
+    }
+
+    /**
+     * Maps a Statistics collection to a json
+     * @param statisticsCollection a collection of Statistics objects
+     * @return a json representation of the collection received as a parameter
+     */
+    public static String getStatisticsCollectionJson(List<Statistics> statisticsCollection) {
+        return gson.toJson(statisticsCollection);
     }
 }

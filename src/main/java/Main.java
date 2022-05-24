@@ -1,8 +1,9 @@
+import jakarta.xml.bind.JAXBException;
 import model.Statistics;
 import model.Student;
 import model.University;
-import repository.UniversityInfoReader;
-import repository.XlsWriter;
+import repository.*;
+import model.DataStructure;
 import service.Comparators;
 import service.JsonUtil;
 import service.StatisticsUtil;
@@ -12,6 +13,7 @@ import service.universityComparators.UniversityComparator;
 import service.universityComparators.UniversityComparators;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -46,6 +48,11 @@ public class Main {
 
         List<Statistics> stat = StatisticsUtil.getStatistics(studSet, univSet);
         System.out.println(stat);
+
+        DataStructure dataStructure = new DataStructure(studSet, univSet);
+
+        XmlWriter.getInstance().writeFile(dataStructure, "C:\\Users\\igor\\Documents\\xmlReqs");
+        JsonWriter.getInstance().writeFile(dataStructure, "C:\\Users\\igor\\Documents\\jsonReqs");
 
         String writingPath = "src/main/resources/statistics.xlsx";
         XlsWriter writer = XlsWriter.getInstance();

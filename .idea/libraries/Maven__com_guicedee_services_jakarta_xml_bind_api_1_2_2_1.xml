@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/jakarta.xml.bind-api/1.2.2.1/jakarta.xml.bind-api-1.2.2.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/jakarta.xml.bind-api-1.2.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

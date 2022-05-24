@@ -1,14 +1,34 @@
 package model;
 
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@XmlRootElement(name = "statisticsEntry")
+@XmlType(propOrder = {"studyProfile", "avgScore"})
 public class Statistics {
+
+    @XmlElement(name = "universityProfile")
     private StudyProfile studyProfile;
+
+    @XmlElement(name = "avgScore")
     private double avgScore;
+
+    @XmlTransient
     private int numberOfStudents;
+
+    @XmlTransient
     private int numberOfUniversities;
+
+    @XmlTransient
     private List<String> universityList;
+
+    public Statistics() {
+    }
 
     public Statistics(StudyProfile studyProfile) {
         this.studyProfile = studyProfile;
@@ -30,6 +50,7 @@ public class Statistics {
         return studyProfile;
     }
 
+    @XmlTransient
     public void setStudyProfile(StudyProfile studyProfile) {
         this.studyProfile = studyProfile;
     }
@@ -38,6 +59,7 @@ public class Statistics {
         return avgScore;
     }
 
+    @XmlTransient
     public void setAvgScore(double avgScore) {
         this.avgScore = avgScore;
     }
@@ -46,6 +68,7 @@ public class Statistics {
         return numberOfStudents;
     }
 
+    @XmlTransient
     public void setNumberOfStudents(int numberOfStudents) {
         this.numberOfStudents = numberOfStudents;
     }
@@ -54,6 +77,7 @@ public class Statistics {
         return numberOfUniversities;
     }
 
+    @XmlTransient
     public void setNumberOfUniversities(int numberOfUniversities) {
         this.numberOfUniversities = numberOfUniversities;
     }
@@ -62,6 +86,7 @@ public class Statistics {
         return universityList;
     }
 
+    @XmlTransient
     public void setUniversityList(List<String> universityList) {
         this.universityList = universityList;
     }
